@@ -5,6 +5,7 @@ export default function FormExample() {
 
     let [name, setName]=useState('');
     let [email, setEmail]=useState('');
+    
     let handleinput=()=>{
         alert("welcome "+name + " Your Email Id is "+email);
     }
