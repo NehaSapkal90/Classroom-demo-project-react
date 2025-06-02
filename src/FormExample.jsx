@@ -15,7 +15,7 @@ export default function FormExample() {
         
         Enter name:<input type="text" onChange={(event)=>{setName(event.target.value)}}></input><br></br>
           Enter Email:<input type='text' onChange={(event)=>{setEmail(event.target.value)}}></input><br></br>
-        <input type='submit' value= "register"></input>
+        <input type='submit' value= "register" className='submit'></input>
       
       </form>
     </div>

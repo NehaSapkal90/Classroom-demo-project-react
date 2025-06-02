@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.container{
+  text-align: center;
+
+}
+.heading{
+  font-size: 30px;
+  background-color: yellow;
+  color: purple;
+}
+.button{
+color: rgb(243, 248, 248);
+background-color: rgb(5, 179, 28);
+border: none;
+padding: 10px;
+border-radius: 20px;
+}
+.button:hover{
+  background-color: blue;
+}

@@ -17,13 +17,21 @@ import UnmountDemo from './UnmountDemo';
 import UseEffectDemo from './UseEffectDemo';
 import UseEffectUnmount from './UseEffectUnmount';
 import FormExample from './FormExample';
+import FormExample1 from './FormExample1';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Service from './Service';
+import Navbar from './Navbar';
+import Formvalidation from './Formvalidation';
+import ExternalCSS from './ExternalCSS';
 
 function App() {
 
   let [isVisible, serisVisible] = useState(true);
   return (
     <div>
-      <h1>Hi, My Name is Neha Sapkal</h1>
+      {/* <h1>Hi, My Name is Neha Sapkal</h1>
       <h2>This is h2 tag</h2>
       <marquee>This is example of react js</marquee>
       <MyFirstFun></MyFirstFun>
@@ -58,7 +66,20 @@ function App() {
       <button onClick={() => { serisVisible(!isVisible) }}>update isVisible</button>
 
       <FormExample></FormExample>
+      <FormExample1></FormExample1> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/about' element={<About></About>}></Route>
+          <Route path='/service' element={<Service></Service>}></Route>
+        </Routes>
+        <Navbar></Navbar>
+      </BrowserRouter>
+      <Formvalidation></Formvalidation>
+
+      <ExternalCSS></ExternalCSS>
     </div>
+    
   );
 }
 
