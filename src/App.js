@@ -25,6 +25,10 @@ import Service from './Service';
 import Navbar from './Navbar';
 import Formvalidation from './Formvalidation';
 import ExternalCSS from './ExternalCSS';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BootstrapExample from './BootstrapExample';
+import GetUsers from './GetUsers';
+import GetStudents from './GetStudents';
 
 function App() {
 
@@ -75,12 +79,17 @@ function App() {
         </Routes>
         <Navbar></Navbar>
       </BrowserRouter>
-      <Formvalidation></Formvalidation>
+      {/* <Formvalidation></Formvalidation>
 
-      <ExternalCSS></ExternalCSS>
+      <ExternalCSS></ExternalCSS> */}
+      {/* <BootstrapExample></BootstrapExample> */}
+        <GetUsers></GetUsers>
+        <GetStudents></GetStudents>
     </div>
     
   );
 }
 
 export default App;
+
+
